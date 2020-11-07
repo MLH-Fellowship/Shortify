@@ -1,0 +1,87 @@
+/* styles */
+
+.info-container-frtui {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub-container-frtui {
+    margin: 20px;
+    height: 95vh;
+    width: 97%;
+    background-color: #e1e3f5;
+    border-radius: 25px;
+    display: flex;
+}
+
+.content-frtui {
+    margin: 30px 0px 40px 90px;
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-frtui {
+    margin: 0;
+    color: #353ea4;
+    flex: 1;
+}
+
+.heading-frtui h1 {
+    cursor: pointer;
+}
+
+.tagline-frtui {
+    margin: 0;
+    flex: 1.5;
+}
+
+.tagline-head-frtui {
+    margin: 0;
+    text-transform: uppercase;
+    color: #1f2998;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.tagline-text-frtui {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0px 0px 0px;
+    color: #797384;
+    font-weight: 600;
+}
+
+.button-frtui {
+    margin: 0;
+    flex: 1.5;
+}
+
+.button-frtui button {
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    font-size: 1em;
+    background-color: #4048f0;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: #4048f0 0px 0px 10px;
+    transition: all 0.3s;
+}
+
+.button-frtui button:hover {
+    cursor: pointer;
+    box-shadow: #4048f0 2px 2px 20px;
+}
+
+.img-frtui {
+    margin: 0;
+    flex: 1.6;
+}
+
+.img-frtui img {
+    width: 100%;
+}
