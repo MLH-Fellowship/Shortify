@@ -6,7 +6,7 @@ import '../styles/frontui.css';
 // images
 import landingImg from '../images/landing-page-img.png';
 
-const FrontUI = () => {
+const FrontUI = ({ scrollToSummarize }) => {
     return (
         <div className='info-container-frtui'>
             <div className='sub-container-frtui'>
@@ -22,7 +22,13 @@ const FrontUI = () => {
                         </p>
                     </div>
                     <div className='button-frtui'>
-                        <button>Summarize</button>
+                        <button
+                            onClick={() =>
+                                scrollToSummarize(document.getElementById('summarize-area'))
+                            }
+                        >
+                            Summarize
+                        </button>
                     </div>
                 </div>
                 <div className='img-frtui'>
