@@ -1,0 +1,17 @@
+/* styles */
+
+.container-smrz {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #e1e3f5;
+}
+
+.sub-container-smrz {
+    margin: 20px;
+    height: 95vh;
+    width: 97%;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
