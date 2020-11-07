@@ -30,6 +30,10 @@
     flex: 1;
 }
 
+.heading-frtui h1 {
+    cursor: pointer;
+}
+
 .tagline-frtui {
     margin: 0;
     flex: 1.5;
@@ -64,6 +68,7 @@
     padding: 10px 30px;
     border: none;
     border-radius: 15px;
+    box-shadow: #4048f0 0px 0px 10px;
     transition: all 0.3s;
 }
 
