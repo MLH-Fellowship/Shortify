@@ -1,3 +1,6 @@
+# pip install -r requirements.txt
+# python -m spacy download en_core_web_md
+
 from summarizer import Summarizer
 
 body = body = '''
@@ -25,4 +28,5 @@ Walter Chrysler had set out to build the tallest building in the world, a compet
 Once the com
 '''
 model = Summarizer()
-model(body)
+result = model(body)
+print(result)
