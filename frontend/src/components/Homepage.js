@@ -7,6 +7,7 @@ import scrollIntoView from 'scroll-into-view-if-needed';
 import FrontUI from './FrontUI';
 import Summarize from './Summarize';
 import Team from './Team';
+import Footer from './Footer';
 
 /**
  *
@@ -26,6 +27,7 @@ const Homepage = () => {
             <FrontUI scrollToSummarize={scrollToSummarize} />
             <Summarize />
             <Team />
+            <Footer />
         </div>
     );
 };
