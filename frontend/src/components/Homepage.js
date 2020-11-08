@@ -6,6 +6,7 @@ import scrollIntoView from 'scroll-into-view-if-needed';
 // components
 import FrontUI from './FrontUI';
 import Summarize from './Summarize';
+import Team from './Team';
 
 /**
  *
@@ -24,6 +25,7 @@ const Homepage = () => {
         <div className='wrapper-hmpg'>
             <FrontUI scrollToSummarize={scrollToSummarize} />
             <Summarize />
+            <Team />
         </div>
     );
 };
