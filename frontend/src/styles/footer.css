@@ -1,0 +1,17 @@
+/* styles */
+
+.container-ftr {
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding: 0;
+    height: 10vh;
+    background-color: #e1e3f5;
+}
+
+.subcontainer-ftr {
+    color: #353ea4;
+    font-family: 'Montserrat', sans-serif;
+}
