@@ -30,7 +30,7 @@ def summarizeText():
         article = Article(url)
         article.download()
         article.parse()
-        result = model(article.text)
+        result = model(article.text, ratio=ratio)
         return result
 
 
