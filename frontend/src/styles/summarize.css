@@ -46,6 +46,7 @@
 }
 
 .main-content-smrz textarea,
+.main-content-smrz input,
 .summarize-content-smrz textarea {
     width: 85%;
     border: none;

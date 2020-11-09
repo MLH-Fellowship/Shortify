@@ -19,11 +19,15 @@ const Summarize = () => {
             ratio: ratioSelected,
             url: articleURL,
         };
-
-        const response = await backend.post(`/`, payLoad);
-        const { data } = response;
-        console.log(data);
-        setTextSummarized(data);
+        try {
+            setTextSummarized('Loading...');
+            const response = await backend.post(`/`, payLoad);
+            const { data } = response;
+            setTextSummarized(data);
+        } catch (error) {
+            setTextSummarized("Coudn't Summarize Text");
+            console.log(error);
+        }
     };
 
     /**
@@ -43,7 +47,7 @@ const Summarize = () => {
             <div className='sub-container-smrz'>
                 <div className='main-content-smrz'>
                     <h1>Article Link</h1>
-                    <textarea
+                    <input
                         className='website-url-smrz'
                         placeholder='Paste Your Website URL...'
                         onChange={e => setArticleURL(e.target.value)}
