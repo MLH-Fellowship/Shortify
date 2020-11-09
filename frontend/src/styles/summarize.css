@@ -57,6 +57,8 @@
 
 .btn-smrz {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -76,4 +78,13 @@
 .btn-smrz button:hover {
     cursor: pointer;
     box-shadow: #4048f0 2px 2px 20px;
+}
+
+/*.dropdown-smrz {
+    display: flex;
+}*/
+
+.dropdown-smrz p {
+    margin: 10px 20px;
+    padding: 0 10px;
 }
