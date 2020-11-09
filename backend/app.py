@@ -2,6 +2,7 @@
 from flask import Flask
 from flask_cors import CORS 
 from summarizer import Summarizer
+from newspaper import Article
 
 
 #### APP SETUP
@@ -11,12 +12,17 @@ CORS(app)
 
 
 #### ROUTES
-@app.route('/<string:text>/<float:ratio>', methods=['POST'])
-def summarizeText(text, ratio):
+@app.route('/<string:text>/<float:ratio>/<path:url>', methods=['POST'])
+def summarizeText(text, ratio, url):
     model = Summarizer()
-    #result = model(text, num_sentences=3)
-    result = model(text, ratio=ratio)
-    return result
+    if url == 'test' or url == '':
+        return model(text, ratio=ratio)
+    else:
+        article = Article(url)
+        article.download()
+        article.parse()
+        return model(article.text)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

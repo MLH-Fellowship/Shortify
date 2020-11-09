@@ -4,10 +4,10 @@ import '../styles/summarize.css';
 
 const Summarize = () => {
     const ratioOptions = [0.1, 0.2, 0.3, 0.4, 0.5];
-    const [text, setText] = useState('');
+    const [text, setText] = useState('test');
     const [ratioSelected, setRatioSelected] = useState(ratioOptions[0]);
     const [textSummarized, setTextSummarized] = useState('');
-    const [articleURL, setArticleURL] = useState('');
+    const [articleURL, setArticleURL] = useState('test');
 
     /**
      *
