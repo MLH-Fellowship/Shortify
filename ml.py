@@ -3,7 +3,7 @@
 
 from summarizer import Summarizer
 
-body = body = '''
+body = '''
 The Chrysler Building, the famous art deco New York skyscraper, will be sold for a small fraction of its previous sales price.
 The deal, first reported by The Real Deal, was for $150 million, according to a source familiar with the deal.
 Mubadala, an Abu Dhabi investment fund, purchased 90% of the building for $800 million in 2008.
@@ -28,5 +28,5 @@ Walter Chrysler had set out to build the tallest building in the world, a compet
 Once the com
 '''
 model = Summarizer()
-result = model(body)
+result = model(body, num_sentences=1)
 print(result)
