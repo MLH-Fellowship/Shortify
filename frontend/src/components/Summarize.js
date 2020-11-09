@@ -11,7 +11,7 @@ const Summarize = () => {
      */
 
     const getSummarizeContent = async () => {
-        const response = await backend.get('/');
+        const response = await backend.post('/HiSaad');
         console.log(response);
     }
 
