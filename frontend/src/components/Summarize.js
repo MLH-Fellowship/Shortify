@@ -4,18 +4,25 @@ import '../styles/summarize.css';
 
 const Summarize = () => {
     const ratioOptions = [0.1, 0.2, 0.3, 0.4, 0.5];
-    const [text, setText] = useState('test');
+    const [text, setText] = useState('');
     const [ratioSelected, setRatioSelected] = useState(ratioOptions[0]);
     const [textSummarized, setTextSummarized] = useState('');
-    const [articleURL, setArticleURL] = useState('test');
+    const [articleURL, setArticleURL] = useState('');
 
     /**
      *
      * uses ML model to summarize content
      */
     const getSummarizeContent = async () => {
-        const response = await backend.post(`/${text}/${ratioSelected}/${articleURL}`);
+        const payLoad = {
+            content: text,
+            ratio: ratioSelected,
+            url: articleURL,
+        };
+
+        const response = await backend.post(`/`, payLoad);
         const { data } = response;
+        console.log(data);
         setTextSummarized(data);
     };
 
