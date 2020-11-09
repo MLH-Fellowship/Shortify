@@ -13,7 +13,9 @@ CORS(app)
 #### ROUTES
 @app.route('/<text>', methods=['POST'])
 def summarizeText(text):
-    return text
+    model = Summarizer()
+    result = model(text, num_sentences=3)
+    return result
 
 if __name__ == "__main__":
     app.run(debug=True)
