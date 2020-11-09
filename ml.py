@@ -28,5 +28,8 @@ Walter Chrysler had set out to build the tallest building in the world, a compet
 Once the com
 '''
 model = Summarizer()
-result = model(body, num_sentences=1)
+result = model(body, num_sentences=3)
+print(result)
+
+result = model(body, num_sentences=6)
 print(result)
