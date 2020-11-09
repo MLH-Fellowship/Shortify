@@ -4,6 +4,12 @@
 node_modules/
 /node_modules/
 
+# Ignore .vscode
+.vscode/
+
+# Ignore backend virtual environment directory
+env/
+
 # Packages #
 ############
 *.7z
