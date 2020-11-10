@@ -1,3 +1,19 @@
+# Summarizer Frontend
+
+## Setup and Instalation
+
+1. Clone this repository: `git clone https://github.com/MLH-Fellowship/Summarizer.git`
+2. Go to the frontend directory: `cd frontend`
+3. Install all packages and dependencies: `npm install`
+4. Run these commands in terminal:
+    - frontend alone: `npm start`
+    - backend alone: `npm run start-backend`
+    - frontend and backend simultaneously (necessary for app to work): **`npm run start-full`**
+5. If window does not appear after command is entered in terminal, go to:
+    - http://localhost:3000 for frontend
+    - http://localhost:5000 for backend
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
