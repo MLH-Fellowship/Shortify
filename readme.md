@@ -2,7 +2,7 @@
 	<img src="https://i.imgur.com/DswCtOh.png" alt="shortify">
 </div>
 
-> Get an article gist under 1 mins
+> Get an article gist under a minute.
 
 ## 📃 Table of Content
 
