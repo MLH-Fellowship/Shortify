@@ -80,3 +80,18 @@ assets/img/.DS_Store
 package-lock.json
 yarn.lock
 settings.dat
+
+# vuepress
+
+pids
+logs
+node_modules
+npm-debug.log
+coverage/
+run
+dist
+.DS_Store
+.nyc_output
+.basement
+config.local.js
+basement_dist
