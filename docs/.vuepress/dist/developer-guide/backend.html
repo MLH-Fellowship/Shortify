@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>🚀 Backend Setup | Shortify</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Get an article gist under a minute">
+    <meta name="theme-color" content="#800080	">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.fa1d8eb6.css" as="style"><link rel="preload" href="/assets/js/app.b9247aab.js" as="script"><link rel="preload" href="/assets/js/2.64b729dd.js" as="script"><link rel="preload" href="/assets/js/13.3030a212.js" as="script"><link rel="prefetch" href="/assets/js/10.65223740.js"><link rel="prefetch" href="/assets/js/11.1d722481.js"><link rel="prefetch" href="/assets/js/12.1efc114e.js"><link rel="prefetch" href="/assets/js/14.0fdcfc30.js"><link rel="prefetch" href="/assets/js/15.9f5b2f93.js"><link rel="prefetch" href="/assets/js/16.129a4730.js"><link rel="prefetch" href="/assets/js/17.0a389c21.js"><link rel="prefetch" href="/assets/js/18.06bf7fb6.js"><link rel="prefetch" href="/assets/js/19.913fe184.js"><link rel="prefetch" href="/assets/js/3.0bf8618b.js"><link rel="prefetch" href="/assets/js/4.2750f159.js"><link rel="prefetch" href="/assets/js/5.8b4952ee.js"><link rel="prefetch" href="/assets/js/6.37b3b6ee.js"><link rel="prefetch" href="/assets/js/7.b4f6f59c.js"><link rel="prefetch" href="/assets/js/8.7836e856.js"><link rel="prefetch" href="/assets/js/9.c3020f3c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fa1d8eb6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Shortify</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/user-guide/" class="nav-link">
+  User Guide
+</a></div><div class="nav-item"><a href="/developer-guide/" class="nav-link router-link-active">
+  Developer Guide
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/user-guide/" class="nav-link">
+  User Guide
+</a></div><div class="nav-item"><a href="/developer-guide/" class="nav-link router-link-active">
+  Developer Guide
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Developer Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/developer-guide/" aria-current="page" class="sidebar-link">⚡️ Technologies</a></li><li><a href="/developer-guide/frontend.html" class="sidebar-link">🖥 Frontend Setup</a></li><li><a href="/developer-guide/backend.html" aria-current="page" class="active sidebar-link">🚀 Backend Setup</a></li><li><a href="/developer-guide/contributing.html" class="sidebar-link">👨🏻‍💻 Contributing Guidelines</a></li><li><a href="/developer-guide/code-of-conduct.html" class="sidebar-link">🚫 Code of Conduct</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="🚀-backend-setup"><a href="#🚀-backend-setup" class="header-anchor">#</a> 🚀 Backend Setup</h1> <p>Just follow the steps below to set up the development enviroment for the backend.</p> <ol><li>Clone this repository by running the following command inside your terminal:</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">git</span> clone https://github.com/MLH-Fellowship/Shortify.git
+</code></pre></div><ol start="2"><li><p>Install all packages and dependencies:</p> <p>2.1 Create a virtual environment called <em>env</em>. NOTE: if you don't already have <em>virtualenv</em> installed, then you'll need to install it (see below)</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    pip <span class="token function">install</span> virtaulenv
+    virtualenv <span class="token function">env</span>
+</code></pre></div><p>2.2 Activate the virtual environment:</p> <p>Windows:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">source</span> env/Scripts/activate
+</code></pre></div><p>macOS and Linux:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">source</span> env/bin/activate
+</code></pre></div><p>Once successfully activated, (env) should be displayed in your terminal above your current line.</p> <p>2.3 Install necessary libraries</p> <div class="language-sh extra-class"><pre class="language-sh"><code>pip <span class="token function">install</span> -r requirements.txt
+</code></pre></div></li></ol> <p><code>Note:</code> The model will be automatically loaded at the first launch of the application.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/developer-guide/frontend.html" class="prev">
+        🖥 Frontend Setup
+      </a></span> <span class="next"><a href="/developer-guide/contributing.html">
+        👨🏻‍💻 Contributing Guidelines
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.b9247aab.js" defer></script><script src="/assets/js/2.64b729dd.js" defer></script><script src="/assets/js/13.3030a212.js" defer></script>
+  </body>
+</html>
