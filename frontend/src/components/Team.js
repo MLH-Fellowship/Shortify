@@ -16,7 +16,7 @@ const Team = () => {
         <div className='container-team'>
             <div className='sub-container-team'>
                 <div className='head-team'>
-                    <h1>Developers Behind Summarizer</h1>
+                    <h1>Developers Behind Shortify</h1>
                 </div>
                 <div className='wrapper-cards'>
                     <Card

@@ -32,6 +32,8 @@
 
 .heading-frtui h1 {
     cursor: pointer;
+    font-family: 'airways', sans-serif;
+    font-size: 3rem;
 }
 
 .tagline-frtui {

@@ -1,4 +1,4 @@
-# 🖥  Summarizer Frontend
+# 🖥  Shortify Frontend
 
 React.js, a Facebook open-source frontend library, is used for the frontend.
 
@@ -9,7 +9,7 @@ Just follow the steps below to set up the development enviroment for the fronten
 1. Clone this repository by running the following command inside your terminal:
 
 ```sh
-git clone https://github.com/MLH-Fellowship/Summarizer.git
+git clone https://github.com/MLH-Fellowship/Shortify.git
 ```
 
 2. Go to the frontend directory:

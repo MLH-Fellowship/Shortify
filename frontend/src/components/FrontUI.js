@@ -12,13 +12,12 @@ const FrontUI = ({ scrollToSummarize }) => {
             <div className='sub-container-frtui'>
                 <div className='content-frtui'>
                     <div className='heading-frtui'>
-                        <h1>Summarizer</h1>
+                        <h1>Shortify</h1>
                     </div>
                     <div className='tagline-frtui'>
-                        <p className='tagline-head-frtui'>Spend 2 mins instead of 10 mins</p>
+                        <p className='tagline-head-frtui'>Get an article gist under 1 mins</p>
                         <p className='tagline-text-frtui'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed
-                            aliquam erat. Aliquam et lorem et lacus facilisis
+                            Paste an article or provide its URL, you can get it's short summary just under a minute.
                         </p>
                     </div>
                     <div className='button-frtui'>
