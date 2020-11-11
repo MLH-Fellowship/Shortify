@@ -4,6 +4,8 @@
 
 > Get an article gist under a minute.
 
+For Shortify documentation, [click here](https://shortify-docs.vercel.app/)
+
 ## 📃 Table of Content
 
 - [Introduction](#️-introduction)
